@@ -1,0 +1,155 @@
+@font-face 
+{
+    font-family: "Outfit";
+    src: url("Font-family/static/Outfit-Black.ttf") format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "Outfit-Thin";
+    src: url("Font-family/static/Outfit-Thin.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.attribution 
+{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
+
+.CouleurFond
+{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.Card
+{
+    width: 350px;
+    border-radius: 10px;
+
+    background-color: hsl(216, 50%, 16%);
+    margin: auto;
+    box-shadow: 10px 5px 20px black;
+
+    display: flex;
+    flex-direction: column;
+    padding: 15px
+}
+
+.EquilibriumImage
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Texte
+{
+    font-family: Outfit;
+    font-size: 12px;
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+}
+
+.Texte p
+{
+    font-family: Outfit-Thin;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%)
+}
+
+.CouleurTrait
+{
+    background-color: hsl(215, 51%, 70%);
+}
+
+.StyleTexte
+{
+    font-size: 18px;
+    color: hsl(178, 100%, 50%);
+}
+
+.Position
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.EcartImage
+{
+    margin-right: 5px;
+}
+
+.AvatarImage
+{
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.Alignement
+{
+    display: flex;
+    align-items: center;
+}
+
+.Epaisseur
+{
+    font-weight: 700;
+}
+
+.CouleurNom
+{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.Espacement
+{
+    margin-left: 5px;
+}
+
+#btn:hover
+{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.ImageContainer::before
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+    content: url(images/icon-view.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageContainer
+{
+    position: relative;
+}
+
+.ImageContainer:hover::before
+{
+    opacity: 0.7;
+    border-radius: 10px;
+}
