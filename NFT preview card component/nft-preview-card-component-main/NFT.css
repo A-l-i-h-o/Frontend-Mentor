@@ -129,6 +129,12 @@
     cursor: pointer;
 }
 
+#btnJW:hover
+{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
 .ImageContainer::before
 {
     position: absolute;
