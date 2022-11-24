@@ -1,0 +1,185 @@
+@font-face 
+{
+    font-family: "RedHatDisplay";
+    src: url("Font-family/static/RedHatDisplay-Black.ttf") format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "RedHatDisplay";
+    src: url("Font-family/static/RedHatDisplay-Regular.ttf") format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "RedHatDisplay";
+    src: url("Font-family/static/RedHatDisplay-Black.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.attribution
+{ 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a 
+{
+    color: hsl(228, 45%, 44%);
+}
+
+.Fond
+{
+    background-image: url(images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.Card
+{
+    width: 350px;
+
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+}
+
+.ImageHero
+{
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn
+{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 8% 0;
+    border: none;
+    box-shadow: 1px 10px 15px grey;
+
+    font-family: RedHatDisplay;
+    font-weight: 700;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.CadrePetit
+{
+    width: 300px;
+    border-radius: 10px ;
+    margin: auto;
+
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 60px auto 70px;
+    align-items: center;
+
+    background-color: hsl(225, 100%, 98%);
+}
+
+h1
+{
+    font-family: RedHatDisplay;
+    font-weight: 900;
+}
+
+.Texte
+{
+    font-size: 15px;
+    font-family: RedHatDisplay;
+    font-weight: 500;
+}
+
+.Ecart
+{
+    padding: 15px;
+}
+
+.ReductionIcone
+{
+    width: 40px;
+}
+
+
+.PointeurTexte
+{
+    color: hsl(245, 75%, 52%);;
+    text-decoration: underline;
+}
+
+.PointeurTexte:hover
+{
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.TexteCancel
+{
+    font-size: 15px;
+    font-family: RedHatDisplay;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%)
+}
+
+.TexteCancel:hover
+{
+    color: black;
+    cursor: pointer;
+}
+
+.TexteGras
+{
+    font-size: 15px;
+    font-family: RedHatDisplay;
+    font-weight: 700;
+}
+
+.EcartImage
+{
+    position: relative;
+    left: 10px;
+}
+
+.EcartTexte
+{
+    position: relative;
+    left: 10px;
+}
+
+@media screen and (max-width: 580px) 
+{
+    .btn
+    {
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .Fond
+    {
+        background-image: url(images/pattern-background-mobile.svg);
+        margin: 0;
+        padding: 0;
+    }
+}
