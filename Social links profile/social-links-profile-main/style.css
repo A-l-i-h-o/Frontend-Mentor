@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+body{
+    height: 100vh; /* Assure que le corps de la page a une hauteur de 100% de la vue (viewport height) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 8%);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.attribution{
+    font-size: 11px; text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+.card{
+    width: 325px;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    border-radius: 3%;
+}
+
+.cardText{
+    height: 5px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 4%;
+    text-align: center;
+    padding: 20px;
+    font-family: Inter-Bold;
+}
+
+.cardText:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+.text{
+    text-align: center;
+    padding: 20px;
+    font-family: Inter-Regular;
+}
+
+.textLieu{
+    text-align: center;
+    padding: 20px;
+    padding-top: 8px;
+    color: hsl(75, 94%, 57%);
+}
+
+.textDescription{
+    text-align: center;
+    padding: 10px;
+    font-family: Inter-Regular;
+    font-size: small;
+}
+
+img{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
